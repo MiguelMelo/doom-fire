@@ -1,9 +1,23 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Doom Fire Effect</title>
   </head>
   <body>
-    <div id="fireCanvas"></div>
+    <center>
+      <h1>Doom Fire Effect</h1>
+      <a href="https://github.com/MiguelMelo/doom-fire">Go to repository</a>
+      <div id="fireCanvas"></div>
+      <div class="margin">
+        <button onclick="decreaseFireSource()">-</button>
+        <button onclick="destroyFireSource()">Min Fire</button>
+        <button onclick="createFireSource()">Max Fire</button>
+        <button onclick="increaseFireSource()">+</button>
+      </div>
+      <div class="margin">
+        <button onclick="toggleDebugMode()">Toogle Debug Mode</button>
+      </div>
+    </center>
     <script src="fire.js"></script>
   </body>
 </html>
